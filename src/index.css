@@ -11,3 +11,109 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 272px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+/* todo-Item styles*/
+.todo-item {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  min-width: 250px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-item__checkbox {
+  cursor: pointer;
+}
+
+.todo-item__checkbox, .todo-item__text {
+  margin-right: 8px;
+}
+
+.todo-item__text.done{
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+.btn {
+  background: none;
+  border: none;
+
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+
+
+.btn_green {
+  background-color: greenyellow;
+  
+}
+
+.btn_red {
+  background-color: red;
+  color:white;
+}
+
+.todos__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Add Todo Form*/
+.add-todo__form {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid gray;
+}
+.add-todo-form-title {
+  margin-bottom: 5px;
+}
+
+.add-todo-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-todo__input {
+  border: none;
+
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+
+}
